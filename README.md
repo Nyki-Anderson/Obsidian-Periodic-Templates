@@ -1,6 +1,8 @@
 # 🗓️ Obsidian-Periodic-Templates
 This is a collection of my templates for periodic (scoped) journal templates including: daily, weekly, monthly, quarterly, and yearly notes. 
 
+![Daily Note Side-By-Side: Source vs. Preview Mode Example](The%20Journal%20(Examples)/Daily/2024/January/0-Daily-Source-VS-Preview.png)
+
 ## 🎯 **Objectives**
 I have spent a long time working out how exactly I want my periodic journal to operate. I have taken it as a personal challenge to configure my journal content so that it is adaptable to each day, measurable for long term goal and progress review, and automatable for obvious reasons. 
 
@@ -32,6 +34,7 @@ These templates:
   - [💻 Implementation](#-implementation)
     - [Dynamic Navigation](#dynamic-navigation)
     - [Daily Notes Template(s)](#daily-notes-templates)
+      - [:camera\_flash: Daily Note Snapshots](#camera_flash-daily-note-snapshots)
     - [Weekly Summmary Template(s)](#weekly-summmary-templates)
     - [Monthly Overview Template(s)](#monthly-overview-templates)
     - [Quarterly Goals Template(s)](#quarterly-goals-templates)
@@ -114,6 +117,16 @@ The scope of the daily note is anything and everything that has value at the mom
 ![Periodic Plugin Options for Daily Template](Screenshots/Periodic%20Plugin%20Options%20(Daily).png)
 
 The naming convention for the daily scope is `/YYYY/MMMM/[Day ] DDD, dddd MMMM Do, YYYY`. Anything separated by a `/` will be a folder which is automatically created if needed.
+
+#### :camera_flash: Daily Note Snapshots
+
+![Source vs. Preview Mode View](<The Journal (Examples)/Daily/2024/January/0-Daily-Source-VS-Preview.png>)
+
+![Properties & Banner View](<The Journal (Examples)/Daily/2024/January/1-Daily-Banner-Properties-View.png>)
+
+![Title & Navigation Bar w/ Calendar](<The Journal (Examples)/Daily/2024/January/2-Daily-Title-Navbar-View.png>)
+
+![Alt text](<The Journal (Examples)/Daily/2024/January/3-Daily-At-A-Glance.png>)
 
 ### Weekly Summmary Template(s)
 The goal of the weekly note is to gather and summarize the musings of the week at a glance but with easy integration back to the raw undistilled body of information when desired. Basically I want to be able to see everything visually or graphically upfront but be able to drill back into the original entry and even expand on them without leaving the weekly interface. I also want to track habits and progress toward more long-term projects and such but this may be better realized in later iterations. The weekly note should zoom me outward just enough to see the forest through the daily trees. 
