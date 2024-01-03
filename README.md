@@ -43,7 +43,7 @@ These templates:
 > 
 > To get the most out of this repository, follow this `README.md` file like a tutorial. The configuration of this system spans several plugins and is nuanced at times... To customize it to your own naming conventions and such will require you understand how the whole system works together. 
 >
-> A [📚 TL;DR](#📚-tldr) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
+> A [📚 TL;DR](#📚-TL;DR) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
 
 # 🗺️ Walkthrough
 This walkthrough will go through the entire setup as is used in my personal vault. The directory structure of this vault is **NOT** reflected in the directory structure of this repository. 
@@ -54,11 +54,11 @@ I will include any Obsidian plugins I make use of and provide screenshots where 
 ### [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
 The most important component of using these tutorials is the **Periodic Notes** plugin. It allows built-in integration with the **Calendar** plugin and allows you to granularly determine where each scoped-periodic note is stored in your folder directory.
 
-Rather than show the configuration of these options here, look for them in the [💻 Implementation](#💻-implementation) section under each periodic scope.
+Rather than show the configuration of these options here, look for them in the [💻 Implementation](#💻-Implementation) section under each periodic scope.
 
 The beauty of this plugin is that you only need to activate the peridioc scopes you want to use (i.e., Daily, Weekly, Monthly, Quarterly, and Yearly).
 
-It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#💻-implementation) section.
+It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#💻-Implementation) section.
 
 ### [Templater](https://github.com/SilentVoid13/Templater)
 **Templater** is where the real magic happens. Be sure to activate the `Trigger Templater on New File Creation` option as it allows dynamic template activation depending on the folder. 
