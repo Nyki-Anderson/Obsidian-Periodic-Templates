@@ -123,6 +123,8 @@ The system works as follows:
 # 🍎 Feedback & Questions Welcome!
 I love sharing what I learn so don't hesitate but I am no expert... Please provide feedback or ask questions for clarification and expect me to be responsive. I also would love to hear ways to improve what I've done -- criticisms are taken constructively!
 
+[Testing](#weekly-summmary-templates)
+
 # 💙 Thank You
 
 [^1]: Navbar and dyanmic note creation from links: [Github: obsidian-periodic-notes-navbar](https://github.com/martenlienen/obsidian-periodic-notes-navbar) by [martenlienen](https://github.com/martenlienen)
