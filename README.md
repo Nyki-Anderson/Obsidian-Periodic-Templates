@@ -43,7 +43,7 @@ These templates:
 > 
 > To get the most out of this repository, follow this `README.md` file like a tutorial. The configuration of this system spans several plugins and is nuanced at times... To customize it to your own naming conventions and such will require you understand how the whole system works together. 
 >
-> A [📚 TL;DR](-📚-TL;DR) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
+> A [📚 TL;DR](#📚-TL;DR) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
 
 # 🗺️ Walkthrough
 This walkthrough will go through the entire setup as is used in my personal vault. The directory structure of this vault is **NOT** reflected in the directory structure of this repository. 
