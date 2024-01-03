@@ -1,2 +1,5 @@
+# Ignore this file itself
+.gitignore
+
 # OS Generated Files=
 **/.DS_Store
