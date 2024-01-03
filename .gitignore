@@ -1,1 +1,5 @@
+# OS Generated Files
 .DS_Store
+
+# Empty Subdirectories to Include
+!The Utilities/Banners/*

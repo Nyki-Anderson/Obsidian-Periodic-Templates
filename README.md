@@ -1,5 +1,5 @@
 # 🗓️ Obsidian-Periodic-Templates
-This is a collection of my templates for periodic journal templates including: daily, weekly, monthly, quarterly, and yearly notes. 
+This is a collection of my templates for periodic (scoped) journal templates including: daily, weekly, monthly, quarterly, and yearly notes. 
 
 # :sparkles: Features:
 These templates:
@@ -50,13 +50,26 @@ This walkthrough will go through the entire setup as is used in my personal vaul
 ## :toolbox: Community Plugins
 I will include any Obsidian plugins I make use of and provide screenshots where helpful to describe configuration of these tools. 
 
-> :notebook: Note: I make heavy use of Javascript (which I am learning as I go) so excuse any errant logic if anything seems too labored or roundabout, please. 
-
 ### Periodic Notes
+The most important component of using these tutorials is the **Periodic Notes** plugin. It allows built-in integration with the **Calendar** plugin and allows you to granularly determine where each scoped-periodic note is stored in your folder directory.
+
+Rather than show the configuration of these options here, look for them in the [💻 Implementation](#💻-implementation) section under each periodic scope.
+
+The beauty of this plugin is that you only need to activate the peridioc scopes you want to use (i.e., Daily, Weekly, Monthly, Quarterly, and Yearly).
+
+It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#💻-implementation) section.
 
 ### Templater
+**Templater** is where the real magic happens. Be sure to activate the `Trigger Templater on New File Creation` option as it allows dynamic template activation depending on the folder. 
+
+Notice, that only the designated scope directory need be designated here. The date-dependent directories will automatically populate when the notes are created. So to get the daily note for today to be stored in `The Journal/Daily/2024/January/Day 2, Tuesday January 2nd, 2024` you need only specify `The Journal/Daily` in the **Templater** options for the `DAILY.md` template. See screenshot below for clarification.
+
+![Templater Folder Note Configuration](Screenshots/Templater%20Configuration.png)
+
+Rather conveniently, this still allows you to use other templates for generic note creation. In my vault I use a frontmatter template to dynamically populate metadata properties and this does not conflict with my periodic note templates.
 
 ### Dataview
+The **Dataview** plugin is used more extensively in the broader scoped periodic templates. More on the logic behind such queries when I further develop the templates beyond [DAILY.md]() and WEEKLY.md. 
 
 ### Tasks
 
