@@ -1,7 +1,12 @@
 # 🗓️ Obsidian-Periodic-Templates
 This is a collection of my templates for periodic (scoped) journal templates including: daily, weekly, monthly, quarterly, and yearly notes. 
 
-# :sparkles: Features:
+## 🎯 **Objectives**
+I have spent a long time working out how exactly I want my periodic journal to operate. I have taken it as a personal challenge to configure my journal content so that it is adaptable to each day, measurable for long term goal and progress review, and automatable for obvious reasons. 
+
+This repository will keep the various versions of templates I have derived personally and through extensive crowd-sourcing of others' methodologies. I will provide links to any inspiration that I used to develop my templates as well. 
+
+## :sparkles: Features:
 These templates:
 - Use **Javascript**, **Dataview** queries, and **Templater** to provide a seamless and automated journaling experience that is directly integrated with both the **Calendar** and **Periodic Notes** plugins. 
 - Contain a navigational menu to jump between periodic scopes.
@@ -9,23 +14,18 @@ These templates:
 - Automatically move each note to the desired folder/subfolder and have unique names at the note-level so linking is simplified.
 - Contain all necessary metadata to capture and later query entries in customizably meaningful ways.
 
-> 🎯 **Objectives**
-> 
-> I have spent a long time working out how exactly I want my periodic journal to operate. I have taken it as a personal challenge to configure my journal content so that it is adaptable to each day, measurable for long term goal and progress review, and automatable for obvious reasons. 
-> 
-> This repository will keep the various versions of templates I have derived personally and through extensive crowd-sourcing of others' methodologies. I will provide links to any inspiration that I used to develop my templates as well. 
-
 # :chair: Table of Contents
 
 - [🗓️ Obsidian-Periodic-Templates](#️-obsidian-periodic-templates)
-- [:sparkles: Features:](#sparkles-features)
+  - [🎯 **Objectives**](#-objectives)
+  - [:sparkles: Features:](#sparkles-features)
 - [:chair: Table of Contents](#chair-table-of-contents)
 - [🗺️ Walkthrough](#️-walkthrough)
   - [:toolbox: Community Plugins](#toolbox-community-plugins)
-    - [Periodic Notes 🔗](#periodic-notes-)
-    - [Templater 🔗](#templater-)
-    - [Dataview 🔗](#dataview-)
-    - [Tasks 🔗](#tasks-)
+    - [Periodic Notes](#periodic-notes)
+    - [Templater](#templater)
+    - [Dataview](#dataview)
+    - [Tasks](#tasks)
     - [*Optional*](#optional)
   - [:building\_construction: Vault Setup](#building_construction-vault-setup)
   - [💻 Implementation](#-implementation)
@@ -51,7 +51,7 @@ This walkthrough will go through the entire setup as is used in my personal vaul
 ## :toolbox: Community Plugins
 I will include any Obsidian plugins I make use of and provide screenshots where helpful to describe configuration of these tools. 
 
-### [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes) 🔗
+### [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
 The most important component of using these tutorials is the **Periodic Notes** plugin. It allows built-in integration with the **Calendar** plugin and allows you to granularly determine where each scoped-periodic note is stored in your folder directory.
 
 Rather than show the configuration of these options here, look for them in the [💻 Implementation](#💻-implementation) section under each periodic scope.
@@ -60,7 +60,7 @@ The beauty of this plugin is that you only need to activate the peridioc scopes 
 
 It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#💻-implementation) section.
 
-### [Templater](https://github.com/SilentVoid13/Templater) 🔗
+### [Templater](https://github.com/SilentVoid13/Templater)
 **Templater** is where the real magic happens. Be sure to activate the `Trigger Templater on New File Creation` option as it allows dynamic template activation depending on the folder. 
 
 Notice, that only the designated scope directory need be designated here. The date-dependent directories will automatically populate when the notes are created. So to get the daily note for today to be stored in `The Journal/Daily/2024/January/Day 2, Tuesday January 2nd, 2024` you need only specify `The Journal/Daily` in the **Templater** options for the `DAILY.md` template. See screenshot below for clarification.
@@ -69,10 +69,10 @@ Notice, that only the designated scope directory need be designated here. The da
 
 Rather conveniently, this still allows you to use other templates for generic note creation. In my vault I use a frontmatter template to dynamically populate metadata properties and this does not conflict with my periodic note templates.
 
-### [Dataview](https://github.com/blacksmithgu/obsidian-dataview) 🔗
+### [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
 The **Dataview** plugin is used more extensively in the broader scoped periodic templates. More on the logic behind such queries when I further develop the templates beyond DAILY.md and WEEKLY.md. 
 
-### [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) 🔗 
+### [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
 
 
 ### *Optional*
