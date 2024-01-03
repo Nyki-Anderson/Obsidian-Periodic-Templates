@@ -27,8 +27,8 @@ These templates:
     - [Dataview](#dataview)
     - [Tasks](#tasks)
     - [*Optional*](#optional)
-      - [Linter: In order to maintain definite style and formatting conventions throughout my vault, I use the plugin **Linter**. I lint on save in the rest of my vault but this would be destructive if my templates and other utilities were altered each time I instinctively press `Command-S`. So in the Linter options, I add the entire `The Utilities` folder to the `Folders to Ignore` list.](#linter-in-order-to-maintain-definite-style-and-formatting-conventions-throughout-my-vault-i-use-the-plugin-linter-i-lint-on-save-in-the-rest-of-my-vault-but-this-would-be-destructive-if-my-templates-and-other-utilities-were-altered-each-time-i-instinctively-press-command-s-so-in-the-linter-options-i-add-the-entire-the-utilities-folder-to-the-folders-to-ignore-list)
-      - [Banners: I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format).](#banners-i-use-the-banners-plugin-to-insert-nice-month-specific-banners-to-each-periodic-note-this-is-done-dyamically-depending-on-the-month-of-the-note-requires-that-each-note-be-named-using-a-valid-date-format)
+      - [Linter:](#linter)
+      - [Banners:](#banners)
   - [🏗️ Vault Setup](#️-vault-setup)
   - [💻 Implementation](#-implementation)
     - [Dynamic Navigation](#dynamic-navigation)
@@ -78,8 +78,10 @@ The **Dataview** plugin is used more extensively in the broader scoped periodic 
 
 
 ### *Optional*
-#### [Linter](https://github.com/platers/obsidian-linter): In order to maintain definite style and formatting conventions throughout my vault, I use the plugin **Linter**. I lint on save in the rest of my vault but this would be destructive if my templates and other utilities were altered each time I instinctively press `Command-S`. So in the Linter options, I add the entire `The Utilities` folder to the `Folders to Ignore` list. 
-#### [Banners](https://github.com/noatpad/obsidian-banners): I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format).
+#### [Linter](https://github.com/platers/obsidian-linter): 
+In order to maintain definite style and formatting conventions throughout my vault, I use the plugin **Linter**. I lint on save in the rest of my vault but this would be destructive if my templates and other utilities were altered each time I instinctively press `Command-S`. So in the Linter options, I add the entire `The Utilities` folder to the `Folders to Ignore` list. 
+#### [Banners](https://github.com/noatpad/obsidian-banners): 
+I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format).
 
 ## 🏗️ Vault Setup
 
