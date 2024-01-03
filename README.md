@@ -29,13 +29,14 @@ These templates:
     - [*Optional*](#optional)
   - [:building\_construction: Vault Setup](#building_construction-vault-setup)
   - [💻 Implementation](#-implementation)
-    - [🗒️ Daily Notes Template(s)](#️-daily-notes-templates)
-    - [🌎 Weekly Summmary Template(s)](#-weekly-summmary-templates)
-    - [🗺️ Monthly Overview Template(s)](#️-monthly-overview-templates)
-    - [🥅 Quarterly Goals Template(s)](#-quarterly-goals-templates)
-    - [🏆 Yearly Progress Template(s)](#-yearly-progress-templates)
+    - [Daily Notes Template(s)](#daily-notes-templates)
+    - [Weekly Summmary Template(s)](#weekly-summmary-templates)
+    - [Monthly Overview Template(s)](#monthly-overview-templates)
+    - [Quarterly Goals Template(s)](#quarterly-goals-templates)
+    - [Yearly Progress Template(s)](#yearly-progress-templates)
 - [:books: TL;DR](#books-tldr)
 - [🍎 Feedback \& Questions Welcome!](#-feedback--questions-welcome)
+- [🔗 References \& Inspiration](#-references--inspiration)
 - [💙 Thank You](#-thank-you)
 
 > ❗ **Tip**:
@@ -83,22 +84,36 @@ My personal vault is organized mainly into folderized **Scopes**. The two main-l
 ![The Journal Folder and Subfolder Conventions](Screenshots/The%20Journal%20Folder.png)
 
 ## 💻 Implementation
+If you wish to implement your vault's periodic note templates exactly as I have, each scope and it's configuration are explained here. The template files themselves are also commented line-by-line for all JavaScript sections. 
 
-### 🗒️ Daily Notes Template(s)
+### Daily Notes Template(s)
 These notes are intended to capture the raw data of the day: tasks, events, musings, and personal objectives. I am playing around with adaptive formatting so that each day can unfold naturally throughout the note rather than have a list of designated prompts that must be filled, as this has not worked for me in the past. The scope of the daily note is anything and everything that has value at the moment and I am designing the structure to be able to handle the broadest scope while being streamlined and fun/playful at the same time. Each expansion in scope should be able to either quantify or query the various entries in the daily note in a meaningful way. Anything that does not satisfy this goal will be continually reworked until it does. 
 
-### 🌎 Weekly Summmary Template(s)
+![Periodic Plugin Options for Daily Template](Screenshots/Periodic%20Plugin%20Options%20(Daily).png)
+
+### Weekly Summmary Template(s)
 The goal of the weekly note is to gather and summarize the musings of the week at a glance but with easy integration back to the raw undistilled body of information when desired. Basically I want to be able to see everything visually or graphically upfront but be able to drill back into the original entry and even expand on them without leaving the weekly interface. I also want to track habits and progress toward more long-term projects and such but this may be better realized in later iterations. The weekly note should zoom me outward just enough to see the forest through the daily trees. 
 
-### 🗺️ Monthly Overview Template(s)
+![Periodic Plugin Options for Weekly Template](Screenshots/Periodic%20Plugin%20Options%20(Weekly).png)
 
-### 🥅 Quarterly Goals Template(s)
+### Monthly Overview Template(s)
 
-### 🏆 Yearly Progress Template(s)
+![Periodic Plugin Options for Monthly Template](Screenshots/Periodic%20Plugin%20Options%20(Monthly).png)
+
+### Quarterly Goals Template(s)
+
+![Periodic Plugin Options for Quarterly Template](Screenshots/Periodic%20Plugin%20Options%20(Quarterly).png)
+
+### Yearly Progress Template(s)
+
+![Alt text](Screenshots/Periodic%20Plugin%20Options%20(Yearly).png)
 
 # :books: TL;DR
 
 # 🍎 Feedback & Questions Welcome!
 I love sharing what I learn so don't hesitate but I am no expert... Please provide feedback or ask questions for clarification and expect me to be responsive. I also would love to hear ways to improve what I've done -- criticisms are taken constructively!
+
+# 🔗 References & Inspiration
+
 
 # 💙 Thank You
