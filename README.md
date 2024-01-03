@@ -6,7 +6,7 @@ I have spent a long time working out how exactly I want my periodic journal to o
 
 This repository will keep the various versions of templates I have derived personally and through extensive crowd-sourcing of others' methodologies. I will provide links to any inspiration that I used to develop my templates as well. 
 
-## :sparkles: Features:
+## ✨ Features:
 These templates:
 - Use **Javascript**, **Dataview** queries, and **Templater** to provide a seamless and automated journaling experience that is directly integrated with both the **Calendar** and **Periodic Notes** plugins. 
 - Contain a navigational menu to jump between periodic scopes.
@@ -14,12 +14,12 @@ These templates:
 - Automatically move each note to the desired folder/subfolder and have unique names at the note-level so linking is simplified.
 - Contain all necessary metadata to capture and later query entries in customizably meaningful ways.
 
-# :chair: Table of Contents
+# 🪑 Table of Contents
 
 - [🗓️ Obsidian-Periodic-Templates](#️-obsidian-periodic-templates)
   - [🎯 **Objectives**](#-objectives)
-  - [:sparkles: Features:](#sparkles-features)
-- [:chair: Table of Contents](#chair-table-of-contents)
+  - [✨ Features:](#-features)
+- [🪑 Table of Contents](#-table-of-contents)
 - [🗺️ Walkthrough](#️-walkthrough)
   - [:toolbox: Community Plugins](#toolbox-community-plugins)
     - [Periodic Notes](#periodic-notes)
@@ -27,7 +27,7 @@ These templates:
     - [Dataview](#dataview)
     - [Tasks](#tasks)
     - [*Optional*](#optional)
-  - [:building\_construction: Vault Setup](#building_construction-vault-setup)
+  - [🏗️ Vault Setup](#️-vault-setup)
   - [💻 Implementation](#-implementation)
     - [Dynamic Navigation](#dynamic-navigation)
     - [Daily Notes Template(s)](#daily-notes-templates)
@@ -35,7 +35,7 @@ These templates:
     - [Monthly Overview Template(s)](#monthly-overview-templates)
     - [Quarterly Goals Template(s)](#quarterly-goals-templates)
     - [Yearly Progress Template(s)](#yearly-progress-templates)
-- [:books: TL;DR](#books-tldr)
+- [📚 TL;DR](#-tldr)
 - [🍎 Feedback \& Questions Welcome!](#-feedback--questions-welcome)
 - [💙 Thank You](#-thank-you)
 
@@ -43,7 +43,7 @@ These templates:
 > 
 > To get the most out of this repository, follow this `README.md` file like a tutorial. The configuration of this system spans several plugins and is nuanced at times... To customize it to your own naming conventions and such will require you understand how the whole system works together. 
 >
-> A [📚 TL;DR](#tldr) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
+> A [📚 TL;DR](#-tldr) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
 
 # 🗺️ Walkthrough
 This walkthrough will go through the entire setup as is used in my personal vault. The directory structure of this vault is **NOT** reflected in the directory structure of this repository. 
@@ -54,11 +54,11 @@ I will include any Obsidian plugins I make use of and provide screenshots where 
 ### [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
 The most important component of using these tutorials is the **Periodic Notes** plugin. It allows built-in integration with the **Calendar** plugin and allows you to granularly determine where each scoped-periodic note is stored in your folder directory.
 
-Rather than show the configuration of these options here, look for them in the [💻 Implementation](#implementation) section under each periodic scope.
+Rather than show the configuration of these options here, look for them in the [💻 Implementation](#-implementation) section under each periodic scope.
 
 The beauty of this plugin is that you only need to activate the peridioc scopes you want to use (i.e., Daily, Weekly, Monthly, Quarterly, and Yearly).
 
-It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#implementation) section.
+It is critical that you use the same naming conventions in this plugin's options as you use in the templates. This may become more clear in the [💻 Implementation](#-implementation) section.
 
 ### [Templater](https://github.com/SilentVoid13/Templater)
 **Templater** is where the real magic happens. Be sure to activate the `Trigger Templater on New File Creation` option as it allows dynamic template activation depending on the folder. 
@@ -79,7 +79,7 @@ The **Dataview** plugin is used more extensively in the broader scoped periodic 
 - [Linter](https://github.com/platers/obsidian-linter): In order to maintain definite style and formatting conventions throughout my vault, I use the plugin **Linter**. I lint on save in the rest of my vault but this would be destructive if my templates and other utilities were altered each time I instinctively press `Command-S`. So in the Linter options, I add the entire `The Utilities` folder to the `Folders to Ignore` list. 
 - [Banners](https://github.com/noatpad/obsidian-banners): I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format).
 
-## :building_construction: Vault Setup
+## 🏗️ Vault Setup
 
 My personal vault is organized mainly into folderized **Scopes**. The two main-level folders that pertain to this project are `The Journal` and `The Utilities` folders. 
 
@@ -113,7 +113,7 @@ The goal of the weekly note is to gather and summarize the musings of the week a
 
 ![Alt text](Screenshots/Periodic%20Plugin%20Options%20(Yearly).png)
 
-# :books: TL;DR
+# 📚 TL;DR
 The system works as follows:
 1. The **Periodic Notes** plugin allows integration with the **Calendar** plugin so that you can simply select a day to create a new daily note. To configure, simply activate the scope of note you wish to use, choose a unique identifier based on `moment.js` syntax, select a template to activate, and specify the folder to store new notes of this scope. 
 2. The **Templater** plugin allows a template to be triggered when the **Periodic Notes** plugin activates. Configure using `Trigger Templater on new file creation` and specify each folder of your journal to trigger the corresponding template.
