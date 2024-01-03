@@ -1,9 +1,9 @@
 ---
 <%*
 // Sets date based on title of file
-let date = moment(tp.file.title, "[Day ] DDD, dddd MMMM Do, YYYY");
+let date = moment(tp.file.title, "[Day ] DDD - dddd MMMM Do YYYY");
 
-let daily = {link: "[The Journal/Daily]/YYYY/MMMM/[Day ] DDD, dddd MMMM Do, YYYY", display: "ddd DD"};
+let daily = {link: "[The Journal/Daily]/YYYY/MMMM/[Day ] DDD - dddd MMMM Do YYYY", display: "ddd DD"};
 let weekly = {link: "[The Journal/Weekly]/YYYY/[Week ] w (YYYY-MM-DD)", display: "[Week ] w"};
 let monthly = {link: "[The Journal/Monthly]/YYYY-MMMM", display: "MMM"};
 let quarterly = {link: "[The Journal/Quarterly]/YYYY-[Q]Q", display: "[Q]Q"};
@@ -18,7 +18,7 @@ aliases:
 created: 
 modified: 
 obsidianUIMode: preview
-obsidianEditingMode: live
+obsidianEditingMode: source
 tags: 
 ---
 
@@ -71,90 +71,177 @@ for (let i = 1; i < 8; i++) {
 > [!objectives] 
 > 
 
-## :mag_right: At a Glance :mag:
+## 🔎 At a Glance 🔍
+
+=== multi-column-start: glance
+
+```column-settings
+Col Count: 3
+Alignment: Center
+Border: off
+```
 
 ### 👟 Just Do It!
 
 ```tasks
-due today
-```
-### 🐢 It Can Wait...
-
-```tasks
-due after today and before next week
+due <% date.format("YYYY-MM-DD") %>
 not done
 ```
-### 💩 Shit Just Got Real ...
+
+=== end-column ===
+### 🐢 It Can Wait
 
 ```tasks
-due before today 
+due after <% date.format("YYYY-MM-DD") %> and before <% date.clone().add(1, "week").format("YYYY-MM-DD") %>
 not done
 ```
+
+=== end-column ===
+### 💩 Shiiiiit
+
+```tasks
+due before <% date.format("YYYY-MM-DD") %> 
+not done
+```
+
+=== multi-column-end
 
 
 ## ⏳ Quick Additions ⌛
 
 ### 🖊 Jot it Down
 
+- [ ] #jotitdown/🖊️ 
+
 ### 👥 Appointments
+
+- [ ] #appt/
 
 ### 🎁 This Shit is Eventful
 
+- [ ] #event/🎁 
+
 ### 🔼 Let Me Upgrade You
 
+- [ ] #scope/🌱 
 
 ## 🪴 Water your Garden 🪴
 
 ### 🏡 Household
 
+- #personal/🏡 
+
 ### 🍽 Cooking 
+
+- #health/🍽 
 
 ### ⚕ Health
 
+- #health/⚕ 
+
 ### 🐈 Freya
+
+- #personal/😻 
 
 ### ♥ Julian
 
+- #scope/💕  
+
 ### 💼 Vapology101
+
+- #scope/💼  
 
 ### 🏫 School
 
+- #school/✏️ 
+
 ### 🚫 Bad Habits
 
-### 💄 Beauty
+- #habits/ 
+
+### 💄 Self-Care
+
+- #personal/💅 
 
 ## 🫚 Deepen Thy Roots 🫚
 
 ### 🧬 Ancestry Research
 
+- #scope/🧬 
+
 ### 🪲 Hacking
 
-### 🎓 Docker Tutorial
+- #hobby/🪲 
+
+### 🎓 Tutorials
+
+- #hobby/🎓  
 
 ### 💻 Other Coding
 
+- #hobby/💻  
+
 ### 🧵 Stitching
 
-### 🎨 Coloring
+- #hobby/🧵  
 
-### 🛋️ Refurbishing/Organizing
+###  🎨 Coloring
 
-### 📓 Miscellaneous
+- #hobby/🎨 
 
+###  🛋️ Refurbishing/Organizing
 
+- #hobby/🛋 
+
+###  🏗 New Projects
+
+- #projects/
 
 ## 🌱 Plant a Seed 🌱
 
 ### 💰 Income
 
+- #finance/💰 
+
 ### 💳 Spending
+
+- #finance/💳  
 
 ### 🏦 Savings
 
+- #finance/🏦  
+
 ### 📈 Debt
+
+- #finance/📈 
 
 ### 🛒 Pending
 
+- #shopping/🛒 
+
 ### 📦 Deliveries
 
+- #shopping/📦  
+
 ## 🌲 Forest through the Trees 🌲
+
+- #personal/📜 
+
+
+## 🔗 Other Notes from Today
+
+### Notes Created
+
+```dataview
+TABLE WITHOUT ID link(file.link, aliases) as "File", description as "Description", tags as "Tags"
+WHERE file.cdate = <% date.format("YYYY-MM-DD") %>
+SORT file.mtime DESC
+```
+
+### Notes Modified
+
+```dataview
+TABLE WITHOUT ID link(file.link, aliases) as "File", description as "Description", tags as "Tags"
+WHERE file.mdate = <% date.format("YYYY-MM-DD") %>
+SORT file.mtime DESC
+```

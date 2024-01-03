@@ -26,9 +26,8 @@ These templates:
     - [Templater](#templater)
     - [Dataview](#dataview)
     - [Tasks](#tasks)
-    - [*Optional*](#optional)
-      - [Linter:](#linter)
-      - [Banners:](#banners)
+    - [Linter:](#linter)
+    - [Banners:](#banners)
   - [🏗️ Vault Setup](#️-vault-setup)
   - [💻 Implementation](#-implementation)
     - [Dynamic Navigation](#dynamic-navigation)
@@ -75,13 +74,23 @@ Rather conveniently, this still allows you to use other templates for generic no
 The **Dataview** plugin is used more extensively in the broader scoped periodic templates. More on the logic behind such queries when I further develop the templates beyond DAILY.md and WEEKLY.md. 
 
 ### [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
+Task is relatively simple though it uses different syntax to **Dataview** and the `moment.js` so be careful and read the documentation. I mainly like this plugin because it allows quick key presets for setting due dates and priority of each task. 
 
-
-### *Optional*
-#### [Linter](https://github.com/platers/obsidian-linter): 
+### [Linter](https://github.com/platers/obsidian-linter): 
 In order to maintain definite style and formatting conventions throughout my vault, I use the plugin **Linter**. I lint on save in the rest of my vault but this would be destructive if my templates and other utilities were altered each time I instinctively press `Command-S`. So in the Linter options, I add the entire `The Utilities` folder to the `Folders to Ignore` list. 
-#### [Banners](https://github.com/noatpad/obsidian-banners): 
-I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format).
+
+I also have it set to create aliases based on the first `H1` heading and the title based on the filename and escape YAML frontmatter that has commas in it.
+
+![Linter Plugin Options for Updating Aliases Based on H1 Header](Screenshots/Linter%20Plugin%20Options%20Aliases.png)
+
+![Alt text](Screenshots/Linter%20Plugin%20Options%20Escape%20Commas.png)
+
+### [Banners](https://github.com/noatpad/obsidian-banners): 
+I use the **Banners** plugin to insert nice month-specific banners to each periodic note. This is done dyamically depending on the month of the note (requires that each note be named using a valid date format). 
+
+Make a new folder inside of `The Utilities` called `Banners/Months` and find stock banners for each month that you like. Then make sure to name each banner with the name of the month followed by "Banner" and ensure all file extensions are the same (`.jpg` and `jpeg` are different syntactically).
+
+Because of the *new* properties update, banners are difficult to display if you still want the YAML frontmatter visible (which I do). To deal with this I made sure my banners were relatively similar in visibility when I set the `banner_y` property (`0.4` worked in my vault). 
 
 ## 🏗️ Vault Setup
 
@@ -95,27 +104,41 @@ If you wish to implement your vault's periodic note templates exactly as I have,
 ### Dynamic Navigation
 At the top of each periodic note will be a navbar that both allows you to quickly jump between scopes (past or present) as well as create new notes from said links. The logic is written in **JavaScript** and uses `moment.js` syntax to easily modify and manipulate dates forward and backward in time[^1].
 
+When learning `moment.js` formatting it became clear fairly quickly that if you use the `add()` or `subtract()` functions, you need to clone the original `date` variable so that it's instance does not change for the rest of the document.
+
 ### Daily Notes Template(s)
-These notes are intended to capture the raw data of the day: tasks, events, musings, and personal objectives. I am playing around with adaptive formatting so that each day can unfold naturally throughout the note rather than have a list of designated prompts that must be filled, as this has not worked for me in the past. The scope of the daily note is anything and everything that has value at the moment and I am designing the structure to be able to handle the broadest scope while being streamlined and fun/playful at the same time. Each expansion in scope should be able to either quantify or query the various entries in the daily note in a meaningful way. Anything that does not satisfy this goal will be continually reworked until it does. 
+These notes are intended to capture the raw data of the day: tasks, events, musings, and personal objectives. I am playing around with adaptive formatting so that each day can unfold naturally throughout the note rather than have a list of designated prompts that must be filled, as this has not worked for me in the past. 
+
+The scope of the daily note is anything and everything that has value at the moment and I am designing the structure to be able to handle the broadest scope while being streamlined and fun/playful at the same time. Each expansion in scope should be able to either quantify or query the various entries in the daily note in a meaningful way. Anything that does not satisfy this goal will be continually reworked until it does. 
 
 ![Periodic Plugin Options for Daily Template](Screenshots/Periodic%20Plugin%20Options%20(Daily).png)
+
+The naming convention for the daily scope is `/YYYY/MMMM/[Day ] DDD, dddd MMMM Do, YYYY`. Anything separated by a `/` will be a folder which is automatically created if needed.
 
 ### Weekly Summmary Template(s)
 The goal of the weekly note is to gather and summarize the musings of the week at a glance but with easy integration back to the raw undistilled body of information when desired. Basically I want to be able to see everything visually or graphically upfront but be able to drill back into the original entry and even expand on them without leaving the weekly interface. I also want to track habits and progress toward more long-term projects and such but this may be better realized in later iterations. The weekly note should zoom me outward just enough to see the forest through the daily trees. 
 
 ![Periodic Plugin Options for Weekly Template](Screenshots/Periodic%20Plugin%20Options%20(Weekly).png)
 
+The naming convention for the weekly scope notes is `/YYYY/[Week ] w (YYYY-MM-DD)`.
+
 ### Monthly Overview Template(s)
 
 ![Periodic Plugin Options for Monthly Template](Screenshots/Periodic%20Plugin%20Options%20(Monthly).png)
+
+The naming convention for the monthly scope notes is `/YYYY/MMMM`.
 
 ### Quarterly Goals Template(s)
 
 ![Periodic Plugin Options for Quarterly Template](Screenshots/Periodic%20Plugin%20Options%20(Quarterly).png)
 
+The naming convention for the quarterly scope notes is `/YYYY/Qo [ Quarter]`.
+
 ### Yearly Progress Template(s)
 
 ![Alt text](Screenshots/Periodic%20Plugin%20Options%20(Yearly).png)
+
+The naming convention for the yearly scope notes is `/YYYY`.
 
 # 📚 TL;DR
 The system works as follows:
