@@ -45,6 +45,7 @@ These templates:
 > A [TL;DR](#📚-tldr) can be found at the bottom of this `README.md` for those who wish to understand how the system was put together but not necessarily the implementation I describe in detail.
 
 # 🗺️ Walkthrough
+This walkthrough will go through the entire setup as is used in my personal vault. The directory structure of this vault is **NOT** reflected in the directory structure of this repository. 
 
 ## :toolbox: Community Plugins
 I will include any Obsidian plugins I make use of and provide screenshots where helpful to describe configuration of these tools. 
