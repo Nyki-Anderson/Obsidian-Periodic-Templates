@@ -1,5 +1,5 @@
 # OS Generated Files
-*.DS_Store
+*/.DS_Store
 
 # Empty Subdirectories to Include
 !The Utilities/*
